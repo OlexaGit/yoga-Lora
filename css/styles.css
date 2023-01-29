@@ -49,7 +49,7 @@ body {
 /* MOBILE */
 @media screen and (min-width: 320px) {
   .container {
-    min-width: 320px;
+    /* min-width: 320px; */
     padding-left: 55px;
     padding-right: 55px;
     margin-left: auto;
@@ -153,9 +153,6 @@ ol {
 
 /* *********************  swiper   ****************** */
 
-.swiper {
-  width: 320px;
-}
 .swiper-slide-active {
   display: flex;
   flex-direction: column;
