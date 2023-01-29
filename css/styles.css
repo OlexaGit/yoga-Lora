@@ -1,45 +1,84 @@
 :root {
-  --primary-color: #2e2f42;
-  --secondary-color: #434455;
-  --accent-color-logo: #4d5ae5;
-  --accent-color-btn: #188ce8;
-  --background-color: #2e2f42;
+  --primary-color: #070707;
   --text-background-color: #ffffff;
-  --second-logo-color: #2e2f42;
+  --secondary-color: #1c4b49;
+  --focus-color: #404bbf;
+  --accent-color-btn: rgba(11, 19, 221, 1);
+  --background-focus-btn: rgba(11, 19, 221, 0.58);
+  --background-color: #2e2f42;
+  --main-font: 'Inter', sans-serif;
+
   --footer-logo-color: #f4f4fd;
-  --text-background-color-footer: #e7e9fc;
-  --background-focus-btn: #404bbf;
-  /* color */
-  --dark-bg-color: #84a178;
-  --text-review: #fcfcfc;
-  --review-name: #131313;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primary-color);
-  background-color: var(--text-background-color);
-  font-size: 16px;
-  letter-spacing: 0.02em;
   font-family: var(--main-font);
+  color: var(--primary-color);
+  background-color: var(--footer-logo-color);
+  font-size: 32px;
+  letter-spacing: 0.02em;
 }
-.customer-reviews {
+.menu-contact,
+.menu-link {
+  text-decoration: none;
+}
+.border-header {
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--text-background-color);
+}
+.logo {
+  background-color: var(--background-color);
+  color: var(--text-background-color);
+}
+.nav-logo {
+  display: flex;
+}
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* .customer-reviews {
   background-image: url(../images/background/background-mobile.jpg);
   background-size: 100%, cover;
   background-position: top 0 center;
   padding-top: 324px;
   border-top: 98px solid var(--dark-bg-color);
-}
-
-.font-family: var(--main-font);
+} */
 
 /* MOBILE */
 @media screen and (min-width: 320px) {
   .container {
     min-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .border-header {
+    width: auto;
+    /* height: 33px; */
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .header {
+    background-size: 100%, cover;
+  }
+  .logo {
+    width: 47px;
+    height: 33px;
+    padding: 2px 10px 10px;
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  .nav-logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .menu-link {
+    margin-left: 8px auto;
   }
 }
 
@@ -54,8 +93,8 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -63,8 +102,8 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -101,19 +140,15 @@ ol {
   text-decoration: none;
 }
 
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
-/* *********************  COPY  ****************** */
-/* *********************  COPY  ****************** */
-/* *********************  COPY  ****************** */
-/* *********************  COPY  ****************** */
-/* *********************  COPY  ****************** */
+/* *********************  swiper   ****************** */
+
 .swiper {
   width: 320px;
-  /* height: 454px; */
 }
 .swiper-slide-active {
   display: flex;
