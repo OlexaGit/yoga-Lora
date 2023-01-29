@@ -15,7 +15,7 @@ body {
   font-family: var(--main-font);
   color: var(--primary-color);
   background-color: var(--footer-logo-color);
-  font-size: 32px;
+  font-size: 16px;
   letter-spacing: 0.02em;
 }
 .menu-contact,
@@ -24,11 +24,13 @@ body {
   list-style: none;
 }
 .border-header {
+  height: 33px;
+  padding-top: 6px;
   background-color: var(--background-color);
   text-align: center;
   color: var(--text-background-color);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
 }
 .logo {
@@ -42,12 +44,19 @@ body {
   display: flex;
   align-items: center;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--secondary-color);
+}
 .teams {
   padding: 90px 0;
 }
 
 .menu-link {
   margin-left: 8px;
+}
+.menu-link a {
+  color: var(--primary-color);
 }
 .teams-h2 {
   font-weight: 400;
@@ -101,14 +110,52 @@ body {
 .footer-meta-left {
   width: 175px;
   font-size: 12px;
-  /* line-height: 1.2px; */
+  margin-right: 30px;
   padding: 20px 0;
+  color: var(--footer-logo-color);
+}
+.footer-meta-right {
+  padding-top: 20px;
 }
 .social-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-item {
+  color: var(--footer-logo-color);
+  fill: currentColor;
+}
+.social-link-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--cubic-bezier);
+}
+.social-link-footer:focus,
+.social-link-footer:hover {
+  background-color: #31d0aa;
+  fill: currentColor;
+  outline-color: rgba(255, 255, 255, 0.1);
 }
 .menu-contact {
-  color: var(--text-background-color);
+  color: var(--footer-logo-color);
+}
+.mail-contact {
+  margin-top: 8px;
+}
+.mobile-menu .menu-link {
+  margin-top: 40px;
+  padding: 0px;
+  /* font-size: 12px; */
+  line-height: 1.21;
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 /* .customer-reviews {
   background-image: url(../images/background/background-mobile.jpg);
@@ -157,6 +204,12 @@ body {
   }
   .swiper {
     width: 480px;
+  }
+  .footer-meta-left {
+    margin-right: 80px;
+  }
+  .mob-item {
+    font-size: 14px;
   }
 }
 
@@ -364,13 +417,13 @@ a {
 }
 .icon-link {
   position: absolute;
-  top: 24px;
+  /* top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 50%; */
   color: #000000;
-  background-color: var(--text-background-color-footer);
+  /* background-color: var(--text-background-color-footer); */
   border: 1px solid rgb(0, 0, 0, 0.1);
   transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 }
@@ -384,6 +437,7 @@ a {
 }
 .form-mw {
   padding: 72px 16px 24px;
+  z-index: 2;
 }
 .form-mw p {
   color: var(--primary-color);
@@ -459,7 +513,7 @@ textarea {
 .form-field-mw textarea:focus {
   border-color: var(--accent-color-logo);
 }
-.privacy-policy {
+/* .privacy-policy {
   margin: 16px 0px 24px;
   color: #8e8f99;
 }
@@ -496,7 +550,7 @@ textarea {
   background-image: url(../images/icon/SVG/click.svg);
   background-size: contain;
   background-origin: border-box;
-}
+} */
 
 /*--------------------- modal window (end)------------ */
 
@@ -523,8 +577,9 @@ textarea {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  padding: 40px;
+  height: 84px;
+  /* height: 100vh; */
+  /* padding: 40px; */
   background-color: var(--text-background-color);
   z-index: 999;
   transform: translateX(100%);
@@ -537,34 +592,39 @@ textarea {
 }
 .menu-container .icon-link {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 10px;
+  right: 10px;
 }
-.mobile-menu .menu-link {
-  margin-top: 40px;
+.mobile-menu {
+  display: flex;
+}
+.mob-item {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: 12px;
+  line-height: 1.21;
   text-decoration: none;
 }
-.contact-info {
+/* .contact-info {
   margin-top: auto;
-}
-.contact-info .menu-contact {
+} */
+/* .contact-info .menu-contact {
   font-size: 36px;
   line-height: 40px;
-}
-.contact-list {
+} */
+/* .contact-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 48px;
-}
-.contact-info .mail-contact {
+} */
+/* .contact-info .mail-contact {
   display: block;
   font-size: 20px;
   line-height: 1.2;
   margin-top: 40px;
-}
+} */
 
 /* ==============jS=============== */
