@@ -396,6 +396,7 @@ a {
   opacity: 1;
   overflow-y: scroll;
   transition: opacity 250ms var(--cubic-bezier);
+  z-index: 2;
 }
 .backdrop.is-hidden {
   opacity: 0;
