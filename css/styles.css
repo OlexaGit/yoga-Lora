@@ -466,6 +466,9 @@ a {
   color: var(--primary-color);
   margin-bottom: 16px;
 }
+.social-text {
+  text-align: center;
+}
 .form-field-mw {
   display: flex;
   flex-direction: column;
@@ -504,7 +507,6 @@ textarea {
   line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .name-mw-icon {
   position: absolute;
   top: 50%;
@@ -512,17 +514,17 @@ textarea {
   display: inline-block;
   width: 22px;
   height: 24px;
-  color: var(--primary-color);
+  fill: var(--accent-color-btn);
   transition: color 250ms var(--cubic-bezier);
 }
 .form-field-mw:focus-within > .name-mw-icon {
-  color: var(--accent-color-logo);
+  color: var(--accent-color-btn);
 }
 .form-field-mw input:focus {
-  border-color: var(--accent-color-logo);
+  border-color: var(--accent-color-btn);
 }
 .form-field-mw textarea:focus {
-  border-color: var(--accent-color-logo);
+  border-color: var(--accent-color-btn);
 }
 
 /*--------------------- modal window (end)------------ */
