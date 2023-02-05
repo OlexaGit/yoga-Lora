@@ -78,6 +78,9 @@ body {
   line-height: 1.52;
   margin-bottom: 10px;
 }
+.cont-number {
+  font-size: 26px;
+}
 .teams-text {
   font-size: 13px;
   line-height: 1.23;
