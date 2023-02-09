@@ -73,7 +73,7 @@ body {
   color: var(--primary-color);
 }
 .teams-h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.52;
   margin-bottom: 10px;
@@ -112,8 +112,9 @@ body {
 }
 .card-set {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px 10px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 .card-overlay {
   width: 180px;
@@ -170,14 +171,27 @@ body {
 .mail-contact {
   margin-top: 8px;
 }
-.mobile-menu .menu-link {
-  margin-top: 40px;
+.mobile-menu {
+  display: flex;
+}
+.mob-item {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
-  /* font-size: 12px; */
+  font-size: 13px;
   line-height: 1.21;
   text-decoration: none;
-  color: var(--secondary-color);
 }
+.mob-item .menu-link {
+  color: var(--secondary-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+.mob-item .menu-link:focus,
+.mob-item .menu-link:hover {
+  color: var(--accent-color-btn);
+}
+
 /* .customer-reviews {
   background-image: url(../images/background/background-mobile.jpg);
   background-size: 100%, cover;
@@ -230,7 +244,25 @@ body {
     margin-right: 80px;
   }
   .mob-item {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .mobile-menu {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .teams-h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .teams-text {
+    font-size: 16px;
+  }
+  .card-set {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 10px;
   }
 }
 
@@ -605,7 +637,7 @@ textarea {
   top: 10px;
   right: 10px;
 }
-.mobile-menu {
+/* .mobile-menu {
   display: flex;
 }
 .mob-item {
@@ -617,6 +649,19 @@ textarea {
   line-height: 1.21;
   text-decoration: none;
 }
+.mob-item .menu-link {
+  margin-top: 40px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+.mob-item .menu-link:focus,
+.mob-item .menu-link:hover {
+  color: var(--accent-color-btn);
+} */
 /* .contact-info {
   margin-top: auto;
 } */
