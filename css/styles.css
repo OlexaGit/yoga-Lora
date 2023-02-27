@@ -793,7 +793,7 @@ textarea {
 }
 .post {
   position: relative;
-  max-width: 600px;
+  max-width: 900px;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -813,7 +813,7 @@ pre {
   font: inherit;
 }
 .post-text::first-letter {
-  font-family: 'Tahoma', serif;
+  font-family: var(--main-font);
   font-size: 32px;
   color: #f44336;
 }
