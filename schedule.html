@@ -56,9 +56,29 @@
       </div>
     </header>
     <main>
-      <p class="border-header">Ця сторінка находиться у розробці!</p>
-
-      <a class="modal-btn" href="./index.html">повернутись на головну</a>
+      <div class="container">
+        <article class="post">
+          <h1 class="post-title">Розклад</h1>
+          <dl class="schedule-title">
+            <dt class="schedule-item">Йога</dt>
+            <pre></pre>
+            <dd>ВІВТОРОК та ЧЕТВЕР</dd>
+            <dd>ранкове о <time class="schedule-time" datetime="T08:15">08:15</time></dd>
+            <dd>вечірнє о <time class="schedule-time" datetime="T18:00">18:00</time></dd>
+            <pre></pre>
+            <dt class="schedule-item">Аквайога</dt>
+            <pre></pre>
+            <dd>ВІВТОРОК, ЧЕТВЕР та СУБОТА</dd>
+            <dd>ранкове о <time class="schedule-time" datetime="T09:15">09:15</time></dd>
+            <pre></pre>
+            <dd>ВІВТОРОК та ЧЕТВЕР</dd>
+            <dd>вечірнє о <time class="schedule-time" datetime="T19:30">19:30</time></dd>
+            <pre></pre>
+            <dt class="schedule-item">Дитячі</dt>
+            <dd>Йде набір в дитячі групи</dd>
+          </dl>
+        </article>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer-block">
@@ -89,8 +109,8 @@
           </li>
           <li>
             e-mail:
-            <a class="menu-contact mail-contact" href="mailto:i.bublik@gmail.com"
-              >i.bublik@gmail.com</a
+            <a class="menu-contact mail-contact" href="mailto:larisabublik154@gmail.com"
+              >larisabublik154@gmail.com</a
             >
           </li>
         </ul>
@@ -128,5 +148,30 @@
         </div>
       </div>
     </footer>
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="icon-link js-close-menu">
+        <svg class="icon-close" width="20" height="20">
+          <use href="./images/icon/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mob-item"><a class="menu-link current" href="./index.html">ЙОГА</a></li>
+        <li class="mob-item"><a class="menu-link" href="./schedule.html">Розклад</a></li>
+        <li class="mob-item">
+          <a
+            class="menu-link adress"
+            href="https://goo.gl/maps/nbHzZ1ZSmehzrKFr8"
+            title="вулиця Миру, 12, Обухів, Київська обл., 08700"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Розташування</a
+          >
+        </li>
+        <li class="mob-item"><a class="menu-link" href="./blog.html">Блог</a></li>
+        <li class="mob-item"><a class="menu-link" href="./about-us.html">Про нас</a></li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
